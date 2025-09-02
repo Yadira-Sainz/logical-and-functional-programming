@@ -1,0 +1,25 @@
+var NAVTREEINDEX0 =
+{
+"_criba_8cpp.html":[1,0,0],
+"_criba_8h.html":[1,0,1],
+"_criba_8h_source.html":[1,0,1],
+"annotated.html":[0,0],
+"class_criba.html":[0,0,0],
+"class_criba.html#a0fe50e9b2973f80c1c3c00acdbcd4d97":[0,0,0,0],
+"class_criba.html#a3b3e58b7d8ad789c268f9167805d1d35":[0,0,0,3],
+"class_criba.html#a4acca829ee2f2fc74b0f32a3446dadd0":[0,0,0,2],
+"class_criba.html#a6dfe60870c00d95ac9debdafec10a389":[0,0,0,4],
+"class_criba.html#a873faff2214adcca49f5937433d1ee61":[0,0,0,5],
+"class_criba.html#a9f2850f02e4c7a9d15eda362d3c9b0e0":[0,0,0,1],
+"classes.html":[0,1],
+"files.html":[1,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"index.html":[],
+"main_8cpp.html":[1,0,2],
+"main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[1,0,2,0],
+"pages.html":[]
+};

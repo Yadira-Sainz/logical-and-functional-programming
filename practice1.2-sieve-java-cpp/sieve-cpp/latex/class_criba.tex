@@ -1,0 +1,129 @@
+\doxysection{Referencia de la clase Criba}
+\hypertarget{class_criba}{}\label{class_criba}\index{Criba@{Criba}}
+
+
+Clase que implementa el algoritmo de la \doxylink{class_criba}{Criba} de Eratóstenes para encontrar números primos hasta un límite dado.  
+
+
+
+
+{\ttfamily \#include $<$Criba.\+h$>$}
+
+\doxysubsubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_criba_a0fe50e9b2973f80c1c3c00acdbcd4d97}{Criba}} (int \mbox{\hyperlink{class_criba_a6dfe60870c00d95ac9debdafec10a389}{n}})
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_criba}{Criba}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_criba_a9f2850f02e4c7a9d15eda362d3c9b0e0}{ejecutar\+Criba}} ()
+\begin{DoxyCompactList}\small\item\em Ejecuta el algoritmo de la \doxylink{class_criba}{Criba} de Eratóstenes y almacena los números primos encontrados. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_criba_a3b3e58b7d8ad789c268f9167805d1d35}{imprimir\+Primos}} () const
+\begin{DoxyCompactList}\small\item\em Imprime la lista de números primos encontrados. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_criba_a4acca829ee2f2fc74b0f32a3446dadd0}{get\+Primos}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve la lista de números primos encontrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_criba_a6dfe60870c00d95ac9debdafec10a389}{n}}
+\begin{DoxyCompactList}\small\item\em Límite superior para buscar números primos. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_criba_a873faff2214adcca49f5937433d1ee61}{primos}}
+\begin{DoxyCompactList}\small\item\em Vector que almacena los números primos encontrados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Clase que implementa el algoritmo de la \doxylink{class_criba}{Criba} de Eratóstenes para encontrar números primos hasta un límite dado. 
+
+\label{doc-constructors}
+\Hypertarget{class_criba_doc-constructors}
+\doxysubsection{Documentación de constructores y destructores}
+\Hypertarget{class_criba_a0fe50e9b2973f80c1c3c00acdbcd4d97}\index{Criba@{Criba}!Criba@{Criba}}
+\index{Criba@{Criba}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{Criba()}{Criba()}}
+{\footnotesize\ttfamily \label{class_criba_a0fe50e9b2973f80c1c3c00acdbcd4d97} 
+Criba\+::\+Criba (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{class_criba}{Criba}. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & Límite superior para buscar números primos.\\
+\hline
+\end{DoxyParams}
+Constructor de la clase \doxylink{class_criba}{Criba}. 
+\begin{DoxyParams}{Parámetros}
+{\em n} & El límite superior hasta donde se buscarán números primos. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_criba_doc-func-members}
+\doxysubsection{Documentación de funciones miembro}
+\Hypertarget{class_criba_a9f2850f02e4c7a9d15eda362d3c9b0e0}\index{Criba@{Criba}!ejecutarCriba@{ejecutarCriba}}
+\index{ejecutarCriba@{ejecutarCriba}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{ejecutarCriba()}{ejecutarCriba()}}
+{\footnotesize\ttfamily \label{class_criba_a9f2850f02e4c7a9d15eda362d3c9b0e0} 
+void Criba\+::ejecutar\+Criba (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Ejecuta el algoritmo de la \doxylink{class_criba}{Criba} de Eratóstenes y almacena los números primos encontrados. 
+
+Método que ejecuta el algoritmo de la criba para encontrar números primos. \Hypertarget{class_criba_a4acca829ee2f2fc74b0f32a3446dadd0}\index{Criba@{Criba}!getPrimos@{getPrimos}}
+\index{getPrimos@{getPrimos}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{getPrimos()}{getPrimos()}}
+{\footnotesize\ttfamily \label{class_criba_a4acca829ee2f2fc74b0f32a3446dadd0} 
+std\+::vector$<$ int $>$ Criba\+::get\+Primos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Devuelve la lista de números primos encontrados. 
+
+\begin{DoxyReturn}{Devuelve}
+Vector de números primos.
+\end{DoxyReturn}
+Método que devuelve el vector de números primos encontrados. \begin{DoxyReturn}{Devuelve}
+Un vector que contiene los números primos encontrados. 
+\end{DoxyReturn}
+\Hypertarget{class_criba_a3b3e58b7d8ad789c268f9167805d1d35}\index{Criba@{Criba}!imprimirPrimos@{imprimirPrimos}}
+\index{imprimirPrimos@{imprimirPrimos}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{imprimirPrimos()}{imprimirPrimos()}}
+{\footnotesize\ttfamily \label{class_criba_a3b3e58b7d8ad789c268f9167805d1d35} 
+void Criba\+::imprimir\+Primos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Imprime la lista de números primos encontrados. 
+
+Método que imprime los números primos encontrados hasta el límite superior n. 
+
+\label{doc-variable-members}
+\Hypertarget{class_criba_doc-variable-members}
+\doxysubsection{Documentación de datos miembro}
+\Hypertarget{class_criba_a6dfe60870c00d95ac9debdafec10a389}\index{Criba@{Criba}!n@{n}}
+\index{n@{n}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily \label{class_criba_a6dfe60870c00d95ac9debdafec10a389} 
+int Criba\+::n\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Límite superior para buscar números primos. 
+
+\Hypertarget{class_criba_a873faff2214adcca49f5937433d1ee61}\index{Criba@{Criba}!primos@{primos}}
+\index{primos@{primos}!Criba@{Criba}}
+\doxysubsubsection{\texorpdfstring{primos}{primos}}
+{\footnotesize\ttfamily \label{class_criba_a873faff2214adcca49f5937433d1ee61} 
+std\+::vector$<$int$>$ Criba\+::primos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector que almacena los números primos encontrados. 
+
+
+
+La documentación de esta clase está generada de los siguientes archivos\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_criba_8h}{Criba.\+h}}\item 
+\mbox{\hyperlink{_criba_8cpp}{Criba.\+cpp}}\end{DoxyCompactItemize}
