@@ -3,6 +3,9 @@
 
 /**
  * @brief Función principal. Permite al usuario ingresar un número y muestra los primos hasta ese número.
+ * Correr el programa
+ * g++ main.cpp Criba.cpp -o main
+ * ./main 
  */
 int main()
 {

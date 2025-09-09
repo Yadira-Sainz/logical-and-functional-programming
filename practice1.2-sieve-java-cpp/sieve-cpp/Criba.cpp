@@ -15,25 +15,25 @@ Criba::Criba(int n) : n(n)
  */
 void Criba::ejecutarCriba()
 {
-    std::vector<bool> esPrimo(n + 1, true);
+    std::vector<int> esPrimo(n + 1, 1);
     for (int i = 2; i <= n; ++i)
     {
-        esPrimo[i] = true;
+        esPrimo[i] = 1;
     }
     for (int p = 2; p * p <= n; ++p)
     {
-        if (esPrimo[p])
+        if (esPrimo[p] == 1)
         {
             for (int i = p * p; i <= n; i += p)
             {
-                esPrimo[i] = false;
+                esPrimo[i] = 0;
             }
         }
     }
     primos.clear();
     for (int i = 2; i <= n; ++i)
     {
-        if (esPrimo[i])
+        if (esPrimo[i] == 1)
         {
             primos.push_back(i);
         }
