@@ -1,17 +1,21 @@
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase que implementa el algoritmo de la Criba de Eratóstenes para encontrar números primos hasta un límite dado.
- * 
+ * Clase que implementa el algoritmo de la Criba de Eratóstenes para encontrar
+ * números primos hasta un límite dado.
+ *
  * @author [Yadira Sainz]
  */
 public class Criba {
+
     private int n;
     private List<Integer> primos;
 
     /**
      * Constructor de la clase Criba.
+     *
      * @param n Límite superior para buscar números primos.
      */
     public Criba(int n) {
@@ -20,23 +24,24 @@ public class Criba {
     }
 
     /**
-     * Ejecuta el algoritmo de la Criba de Eratóstenes y almacena los números primos encontrados.
+     * Ejecuta el algoritmo de la Criba de Eratóstenes y almacena los números
+     * primos encontrados.
      */
     public void ejecutarCriba() {
-        boolean[] esPrimo = new boolean[n + 1];
+        int[] esPrimo = new int[n + 1];
         for (int i = 2; i <= n; i++) {
-            esPrimo[i] = true;
+            esPrimo[i] = 1;
         }
         for (int p = 2; p * p <= n; p++) {
-            if (esPrimo[p]) {
+            if (esPrimo[p] == 1) {
                 for (int i = p * p; i <= n; i += p) {
-                    esPrimo[i] = false;
+                    esPrimo[i] = 0;
                 }
             }
         }
         primos.clear();
         for (int i = 2; i <= n; i++) {
-            if (esPrimo[i]) {
+            if (esPrimo[i] == 1) {
                 primos.add(i);
             }
         }
@@ -55,6 +60,7 @@ public class Criba {
 
     /**
      * Devuelve la lista de números primos encontrados.
+     *
      * @return Lista de números primos.
      */
     public List<Integer> getPrimos() {
