@@ -30,10 +30,10 @@ public class Criba {
     public void ejecutarCriba() {
         int[] esPrimo = new int[n + 1];
         for (int i = 2; i <= n; i++) {
-            esPrimo[i] = 1;
+            esPrimo[i] = i;
         }
         for (int p = 2; p * p <= n; p++) {
-            if (esPrimo[p] == 1) {
+            if (esPrimo[p] != 0) {
                 for (int i = p * p; i <= n; i += p) {
                     esPrimo[i] = 0;
                 }
@@ -41,7 +41,7 @@ public class Criba {
         }
         primos.clear();
         for (int i = 2; i <= n; i++) {
-            if (esPrimo[i] == 1) {
+            if (esPrimo[i] != 0) {
                 primos.add(i);
             }
         }

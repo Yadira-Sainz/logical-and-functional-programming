@@ -15,14 +15,14 @@ Criba::Criba(int n) : n(n)
  */
 void Criba::ejecutarCriba()
 {
-    std::vector<int> esPrimo(n + 1, 1);
+    std::vector<int> esPrimo(n + 1, 0);
     for (int i = 2; i <= n; ++i)
     {
-        esPrimo[i] = 1;
+        esPrimo[i] = i;
     }
     for (int p = 2; p * p <= n; ++p)
     {
-        if (esPrimo[p] == 1)
+        if (esPrimo[p] != 0)
         {
             for (int i = p * p; i <= n; i += p)
             {
@@ -33,9 +33,9 @@ void Criba::ejecutarCriba()
     primos.clear();
     for (int i = 2; i <= n; ++i)
     {
-        if (esPrimo[i] == 1)
+        if (esPrimo[i] != 0)
         {
-            primos.push_back(i);
+            primos.push_back(esPrimo[i]);
         }
     }
 }
