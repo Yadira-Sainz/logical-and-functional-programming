@@ -1,7 +1,3 @@
--- ===================================
--- Práctica 1.3 - Programación Funcional
--- ===================================
-
 -- 1. Declaración de Valores
 -- Declara tres valores a, b y c y calcula su suma total.
 a = 10
@@ -74,9 +70,15 @@ mayoresDeDiez xs = filter (>10) xs
 cuadradoDePares xs = map (^2) (filter even xs)
 
 -- 7. Ejercicio Reto (integrador)
--- Programa en Haskell que: 1. Genera una lista del 1 al 100.
--- 2. Filtra los múltiplos de 3 y 5.
--- 3. Calcula la suma.
+-- Genera una lista del 1 al 100.
+listaDel1Al100 = [1..100]
+
+-- Filtra los múltiplos de 3 y 5.
+multiplosDe3y5 xs = filter (\x -> x `mod` 3 == 0 || x `mod` 5 == 0) xs
+
+-- Calcula la suma de esos múltiplos.
+sumaMultiplos xs = sum xs
+
 main = do
     putStrLn "\n-- Declaración de valores --"
     putStrLn $ "sumaTotal: " ++ show sumaTotal
@@ -109,7 +111,8 @@ main = do
     putStrLn $ "cuadradoDePares [1..10]: " ++ show (cuadradoDePares [1..10])
 
     putStrLn "\n-- Ejercicio Reto (integrador) --"
-    let lista100 = [1..100]
-    let multiplosDe3y5 = filter (\x -> x `mod` 3 == 0 || x `mod` 5 == 0) lista100
-    let sumaFinal = sum multiplosDe3y5
-    putStrLn $ "Suma de múltiplos de 3 y 5 del 1 al 100: " ++ show sumaFinal
+    let lista = listaDel1Al100
+    let multiplos = multiplosDe3y5 lista
+    putStrLn $ "Múltiplos de 3 y 5 del 1 al 100: " ++ show multiplos
+    let suma = sumaMultiplos multiplos
+    putStrLn $ "Suma de múltiplos de 3 y 5 del 1 al 100: " ++ show suma
