@@ -1,9 +1,30 @@
+# Archivos del sistema macOS
 .DS_Store
+
+# Archivos intermedios o compilados de Haskell, Java y Python
 *.hi
 *.o
 *.class
 *.log
 *.tmp
+
+# Cachés y archivos compilados de Python
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Carpetas de distribución o compilación
 dist/
 build/
+
+# Entornos virtuales de Python
+.venv/
+venv/
+
+# Checkpoints automáticos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos adicionales que no deben subirse
+.env
+*.egg-info/
